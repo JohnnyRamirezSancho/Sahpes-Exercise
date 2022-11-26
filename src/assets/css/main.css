@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 64px;
+    height: 38px;
+    background: #cacaca;
+    border-radius: 7px;
+    transition: all 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#shapes{
+    display: flex;
+    gap: 50px;
+    justify-items: center;
+}
+
+#shapeTriangle,
+#shapeSquare,
+#shapeCircle {
+    transition: all 0.4s;
+}
+
+#shapeTriangle:hover,
+#shapeSquare:hover,
+#shapeCircle:hover {
+    transform: translateY(-15px);
+    filter: hue-rotate(45deg);
+}
